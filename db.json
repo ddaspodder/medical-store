@@ -1,0 +1,966 @@
+{
+  "data": [
+    {
+      "type": "Tablet",
+      "product": "ACILOC 150 TAB",
+      "stock": "14|0",
+      "store": "5|0",
+      "shop": "9|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "30",
+      "rack": "DW 1",
+      "manufacturer": "CADILA PHARMACEUTICALS LTD",
+      "supplier": "JANATA",
+      "id": "oSruo3o"
+    },
+    {
+      "type": "catheter",
+      "product": "A to Z Gold NS Cap",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "capsule",
+      "subUnitPerUnit": "15",
+      "rack": "RK 7",
+      "manufacturer": "ALKEM",
+      "supplier": "PODDER",
+      "id": "QKYjSrH"
+    },
+    {
+      "type": "Syrup",
+      "product": "SUCRAL-O 100ML SYP",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "bottle",
+      "subUnit": "",
+      "subUnitPerUnit": 1,
+      "rack": "RK 5",
+      "manufacturer": "STRASSENBURG PHARMACEUTIALS LTD",
+      "supplier": "JANATA",
+      "id": "MrjHG3b"
+    },
+    {
+      "type": "Drop",
+      "product": "A TO Z NS DROP 15ML",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "drop",
+      "subUnit": "",
+      "subUnitPerUnit": 1,
+      "rack": "RK 7",
+      "manufacturer": "ALKEM LAORATORIES LTD",
+      "supplier": "PODDER",
+      "id": "rfb-ct4"
+    },
+    {
+      "type": "dilution",
+      "product": "A TO Z TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "15",
+      "rack": "RK 4",
+      "manufacturer": "ALKEM LAORATORIES LTD",
+      "supplier": "PODDER",
+      "id": "9MkMrZC"
+    },
+    {
+      "type": "Tablet",
+      "product": "ACILOC RD TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "15",
+      "rack": "DW 1",
+      "manufacturer": "CADILA PHARMACEUTICALS LTD",
+      "supplier": "JANATA",
+      "id": "Bso53i3"
+    },
+    {
+      "type": "Capsule",
+      "product": "AD 100 CAP",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "capsule",
+      "subUnitPerUnit": "10",
+      "rack": "RK 6",
+      "manufacturer": "HETERO DRUGS LTD",
+      "supplier": "JANATA",
+      "id": "TA7B-W9"
+    },
+    {
+      "type": "Tablet",
+      "product": "ADMENTA 5 TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "10",
+      "rack": "DW 1",
+      "manufacturer": "SUN PHARMACEUTICAL INDUSTRIES LTD",
+      "supplier": "JANATA",
+      "id": "liTpzAo"
+    },
+    {
+      "type": "Tablet",
+      "product": "ADMENTA 10 TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "10",
+      "rack": "DW 1",
+      "manufacturer": "SUN PHARMACEUTICAL INDUSTRIES LTD",
+      "supplier": "JANATA",
+      "id": "Y2oX264"
+    },
+    {
+      "type": "Capsule",
+      "product": "AFOGATRAN-110 CAP",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "capsule",
+      "subUnitPerUnit": "10",
+      "rack": "CUB 2",
+      "manufacturer": "TORRENT PHARMACEUTICALS LTD",
+      "supplier": "JANATA",
+      "id": "3lcORSj"
+    },
+    {
+      "type": "Syrup",
+      "product": "ALEX  JUNIOR 60 SYP",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "bottle",
+      "subUnit": "",
+      "subUnitPerUnit": 1,
+      "rack": "",
+      "manufacturer": "GLENMARK PHARMACEUTICALS LTD",
+      "supplier": "",
+      "id": "mNOTy8v"
+    },
+    {
+      "type": "Syrup",
+      "product": "ALEX COUGH SYP 100ML",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "bottle",
+      "subUnit": "",
+      "subUnitPerUnit": 1,
+      "rack": "RK 6",
+      "manufacturer": "GLENMARK PHARMACEUTICALS LTD",
+      "supplier": "JANATA",
+      "id": "IMcO_by"
+    },
+    {
+      "type": "",
+      "product": "ALKASOL SYP 100ML",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "bottle",
+      "subUnit": "",
+      "subUnitPerUnit": 1,
+      "rack": "RK 5",
+      "manufacturer": "STADMET PVT LTD",
+      "supplier": "JANATA",
+      "id": "09RO_HR"
+    },
+    {
+      "type": "Tablet",
+      "product": "ALLEGRA 120 TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "10",
+      "rack": "RK 8",
+      "manufacturer": "SANOFI INDIA LTD",
+      "supplier": "JANATA",
+      "id": "EFqXwVs"
+    },
+    {
+      "type": "Syrup",
+      "product": "ALLERCET M SYP 60ML",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "bottle",
+      "subUnit": "",
+      "subUnitPerUnit": 1,
+      "rack": "",
+      "manufacturer": "MICRO LABS",
+      "supplier": "ARKA  MR, PODDER",
+      "id": "k8yXUN9"
+    },
+    {
+      "type": "Tablet",
+      "product": "AMIXIDE-H TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "strips",
+      "subUnitPerUnit": 1,
+      "rack": "RK 4",
+      "manufacturer": "SUN PHARMACEUTICAL INDUSTRIES LTD",
+      "supplier": "JANATA",
+      "id": "RyG8faO"
+    },
+    {
+      "type": "Tablet",
+      "product": "AMODEP 5MG TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "10",
+      "rack": "CUB 2",
+      "manufacturer": "FDC LTD",
+      "supplier": "HALDER",
+      "id": "tw9g5n6"
+    },
+    {
+      "type": "Oinment",
+      "product": "ANOBLISS CREAM 30GM",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "oinment",
+      "subUnit": "",
+      "subUnitPerUnit": 1,
+      "rack": "RK 3",
+      "manufacturer": "SAMRATH LIFE SCIENCE LTD",
+      "supplier": "JANATA",
+      "id": "T7xFWmS"
+    },
+    {
+      "type": "",
+      "product": "ARBITEL 20 TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "10",
+      "rack": "CUB 2",
+      "manufacturer": "MICRO LABS",
+      "supplier": "PODDER, TANMAY MR",
+      "id": "8SsXrHz"
+    },
+    {
+      "type": "Tablet",
+      "product": "ARBITEL 40 TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "10",
+      "rack": "CUB 10",
+      "manufacturer": "MICRO LABS",
+      "supplier": "TANMAY MR, JANATA",
+      "id": "TuKEItZ"
+    },
+    {
+      "type": "Tablet",
+      "product": "ARBITEL H TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "tablet",
+      "subUnitPerUnit": "10",
+      "rack": "CUB 2",
+      "manufacturer": "MICRO LABS",
+      "supplier": "TANMAY MR",
+      "id": "RgqU6ro"
+    },
+    {
+      "type": "",
+      "product": "ARBITEL 80 H TAB",
+      "stock": "0|0",
+      "store": "0|0",
+      "shop": "0|0",
+      "unit": "strips",
+      "subUnit": "",
+      "subUnitPerUnit": 1,
+      "rack": "CUB 2",
+      "manufacturer": "",
+      "supplier": "",
+      "id": "wVT0rpL"
+    }
+  ],
+  "unit": [
+    {
+      "id": "ampoule",
+      "value": "Ampoule"
+    },
+    {
+      "id": "box",
+      "value": "Box"
+    },
+    {
+      "id": "caplet",
+      "value": "Caplet"
+    },
+    {
+      "id": "cartridge",
+      "value": "Cartridge"
+    },
+    {
+      "id": "catheter",
+      "value": "Catheter"
+    },
+    {
+      "id": "capsule",
+      "value": "Capsule"
+    },
+    {
+      "id": "device",
+      "value": "Device"
+    },
+    {
+      "id": "dilution",
+      "value": "Dilution"
+    },
+    {
+      "id": "drop",
+      "value": "Drop"
+    },
+    {
+      "id": "ear_drop",
+      "value": "Ear Drop"
+    },
+    {
+      "id": "enema",
+      "value": "Enema"
+    },
+    {
+      "id": "enema_perssaries",
+      "value": "Enema Perssaries"
+    },
+    {
+      "id": "eye_cream",
+      "value": "Eye Cream"
+    },
+    {
+      "id": "eye_drop",
+      "value": "Eye Drop"
+    },
+    {
+      "id": "gel",
+      "value": "Gel"
+    },
+    {
+      "id": "gelatin _capsule",
+      "value": "Gelatin Capsule"
+    },
+    {
+      "id": "granules",
+      "value": "Granules"
+    },
+    {
+      "id": "injection",
+      "value": "Injection"
+    },
+    {
+      "id": "jar",
+      "value": "Jar"
+    },
+    {
+      "id": "liquid",
+      "value": "Liquid"
+    },
+    {
+      "id": "mdi_inhaler",
+      "value": "MDI Inhaler"
+    },
+    {
+      "id": "mdi_autohaler",
+      "value": "MDI Autohaler"
+    },
+    {
+      "id": "mouth_wash",
+      "value": "Caplet"
+    },
+    {
+      "id": "nasal_sprey",
+      "value": "Nasal Sprey"
+    },
+    {
+      "id": "ophthalmic _solution",
+      "value": "Ophthalmic Solution"
+    },
+    {
+      "id": "oral_solution",
+      "value": "Oral Solution"
+    },
+    {
+      "id": "packet",
+      "value": "Packet"
+    },
+    {
+      "id": "pellets",
+      "value": "Pellets"
+    },
+    {
+      "id": "pouch",
+      "value": "Pouch"
+    },
+    {
+      "id": "powder",
+      "value": "Powder"
+    },
+    {
+      "id": "pump_bottles",
+      "value": "Pump Bottles"
+    },
+    {
+      "id": "rotacaps",
+      "value": "Rotacaps"
+    },
+    {
+      "id": "respules",
+      "value": "Respules"
+    },
+    {
+      "id": "sachet",
+      "value": "Sachet"
+    },
+    {
+      "id": "sanitizer",
+      "value": "Sanitizer"
+    },
+    {
+      "id": "scrub",
+      "value": "Scrub"
+    },
+    {
+      "id": "serum",
+      "value": "Serum"
+    },
+    {
+      "id": "shampoo",
+      "value": "Shampoo"
+    },
+    {
+      "id": "solution",
+      "value": "Solution"
+    },
+    {
+      "id": "solution_for_injection",
+      "value": "Solution For Injection"
+    },
+    {
+      "id": "sprey",
+      "value": "Sprey"
+    },
+    {
+      "id": "strips",
+      "value": "Strips"
+    },
+    {
+      "id": "suppositories",
+      "value": "Suppositories"
+    },
+    {
+      "id": "suspension",
+      "value": "Suspension"
+    },
+    {
+      "id": "tablet",
+      "value": "Tablet"
+    },
+    {
+      "id": "test_strips",
+      "value": "Test Strips"
+    },
+    {
+      "id": "toner",
+      "value": "Toner"
+    },
+    {
+      "id": "tube",
+      "value": "Tube"
+    },
+    {
+      "id": "vaginal_capsules",
+      "value": "Vaginal Capsule"
+    },
+    {
+      "id": "vaginal_cream",
+      "value": "Vaginal Cream"
+    },
+    {
+      "id": "vaginal_gel",
+      "value": "Vaginal Gel"
+    },
+    {
+      "id": "vaginal_suppositories",
+      "value": "Vaginal Suppositories"
+    },
+    {
+      "id": "vaginal_wash",
+      "value": "Vaginal Wash"
+    },
+    {
+      "id": "vial",
+      "value": "Vial"
+    }
+  ],
+  "subUnit": [
+    {
+      "id": "ampoule",
+      "value": "Ampoule"
+    },
+    {
+      "id": "box",
+      "value": "Box"
+    },
+    {
+      "id": "caplet",
+      "value": "Caplet"
+    },
+    {
+      "id": "cartridge",
+      "value": "Cartridge"
+    },
+    {
+      "id": "catheter",
+      "value": "Catheter"
+    },
+    {
+      "id": "capsule",
+      "value": "Capsule"
+    },
+    {
+      "id": "device",
+      "value": "Device"
+    },
+    {
+      "id": "dilution",
+      "value": "Dilution"
+    },
+    {
+      "id": "drop",
+      "value": "Drop"
+    },
+    {
+      "id": "ear_drop",
+      "value": "Ear Drop"
+    },
+    {
+      "id": "enema",
+      "value": "Enema"
+    },
+    {
+      "id": "enema_perssaries",
+      "value": "Enema Perssaries"
+    },
+    {
+      "id": "eye_cream",
+      "value": "Eye Cream"
+    },
+    {
+      "id": "eye_drop",
+      "value": "Eye Drop"
+    },
+    {
+      "id": "gel",
+      "value": "Gel"
+    },
+    {
+      "id": "gelatin _capsule",
+      "value": "Gelatin Capsule"
+    },
+    {
+      "id": "granules",
+      "value": "Granules"
+    },
+    {
+      "id": "injection",
+      "value": "Injection"
+    },
+    {
+      "id": "jar",
+      "value": "Jar"
+    },
+    {
+      "id": "liquid",
+      "value": "Liquid"
+    },
+    {
+      "id": "mdi_inhaler",
+      "value": "MDI Inhaler"
+    },
+    {
+      "id": "mdi_autohaler",
+      "value": "MDI Autohaler"
+    },
+    {
+      "id": "mouth_wash",
+      "value": "Caplet"
+    },
+    {
+      "id": "nasal_sprey",
+      "value": "Nasal Sprey"
+    },
+    {
+      "id": "ophthalmic _solution",
+      "value": "Ophthalmic Solution"
+    },
+    {
+      "id": "oral_solution",
+      "value": "Oral Solution"
+    },
+    {
+      "id": "packet",
+      "value": "Packet"
+    },
+    {
+      "id": "pellets",
+      "value": "Pellets"
+    },
+    {
+      "id": "pouch",
+      "value": "Pouch"
+    },
+    {
+      "id": "powder",
+      "value": "Powder"
+    },
+    {
+      "id": "pump_bottles",
+      "value": "Pump Bottles"
+    },
+    {
+      "id": "rotacaps",
+      "value": "Rotacaps"
+    },
+    {
+      "id": "respules",
+      "value": "Respules"
+    },
+    {
+      "id": "sachet",
+      "value": "Sachet"
+    },
+    {
+      "id": "sanitizer",
+      "value": "Sanitizer"
+    },
+    {
+      "id": "scrub",
+      "value": "Scrub"
+    },
+    {
+      "id": "serum",
+      "value": "Serum"
+    },
+    {
+      "id": "shampoo",
+      "value": "Shampoo"
+    },
+    {
+      "id": "solution",
+      "value": "Solution"
+    },
+    {
+      "id": "solution_for_injection",
+      "value": "Solution For Injection"
+    },
+    {
+      "id": "sprey",
+      "value": "Sprey"
+    },
+    {
+      "id": "strips",
+      "value": "Strips"
+    },
+    {
+      "id": "suppositories",
+      "value": "Suppositories"
+    },
+    {
+      "id": "suspension",
+      "value": "Suspension"
+    },
+    {
+      "id": "tablet",
+      "value": "Tablet"
+    },
+    {
+      "id": "test_strips",
+      "value": "Test Strips"
+    },
+    {
+      "id": "toner",
+      "value": "Toner"
+    },
+    {
+      "id": "tube",
+      "value": "Tube"
+    },
+    {
+      "id": "vaginal_capsules",
+      "value": "Vaginal Capsule"
+    },
+    {
+      "id": "vaginal_cream",
+      "value": "Vaginal Cream"
+    },
+    {
+      "id": "vaginal_gel",
+      "value": "Vaginal Gel"
+    },
+    {
+      "id": "vaginal_suppositories",
+      "value": "Vaginal Suppositories"
+    },
+    {
+      "id": "vaginal_wash",
+      "value": "Vaginal Wash"
+    },
+    {
+      "id": "vial",
+      "value": "Vial"
+    }
+  ],
+  "types": [
+    {
+      "id": "ampoule",
+      "value": "Ampoule"
+    },
+    {
+      "id": "box",
+      "value": "Box"
+    },
+    {
+      "id": "caplet",
+      "value": "Caplet"
+    },
+    {
+      "id": "cartridge",
+      "value": "Cartridge"
+    },
+    {
+      "id": "catheter",
+      "value": "Catheter"
+    },
+    {
+      "id": "capsule",
+      "value": "Capsule"
+    },
+    {
+      "id": "device",
+      "value": "Device"
+    },
+    {
+      "id": "dilution",
+      "value": "Dilution"
+    },
+    {
+      "id": "drop",
+      "value": "Drop"
+    },
+    {
+      "id": "ear_drop",
+      "value": "Ear Drop"
+    },
+    {
+      "id": "enema",
+      "value": "Enema"
+    },
+    {
+      "id": "enema_perssaries",
+      "value": "Enema Perssaries"
+    },
+    {
+      "id": "eye_cream",
+      "value": "Eye Cream"
+    },
+    {
+      "id": "eye_drop",
+      "value": "Eye Drop"
+    },
+    {
+      "id": "gel",
+      "value": "Gel"
+    },
+    {
+      "id": "gelatin _capsule",
+      "value": "Gelatin Capsule"
+    },
+    {
+      "id": "granules",
+      "value": "Granules"
+    },
+    {
+      "id": "injection",
+      "value": "Injection"
+    },
+    {
+      "id": "jar",
+      "value": "Jar"
+    },
+    {
+      "id": "liquid",
+      "value": "Liquid"
+    },
+    {
+      "id": "mdi_inhaler",
+      "value": "MDI Inhaler"
+    },
+    {
+      "id": "mdi_autohaler",
+      "value": "MDI Autohaler"
+    },
+    {
+      "id": "mouth_wash",
+      "value": "Caplet"
+    },
+    {
+      "id": "nasal_sprey",
+      "value": "Nasal Sprey"
+    },
+    {
+      "id": "ophthalmic _solution",
+      "value": "Ophthalmic Solution"
+    },
+    {
+      "id": "oral_solution",
+      "value": "Oral Solution"
+    },
+    {
+      "id": "packet",
+      "value": "Packet"
+    },
+    {
+      "id": "pellets",
+      "value": "Pellets"
+    },
+    {
+      "id": "pouch",
+      "value": "Pouch"
+    },
+    {
+      "id": "powder",
+      "value": "Powder"
+    },
+    {
+      "id": "pump_bottles",
+      "value": "Pump Bottles"
+    },
+    {
+      "id": "rotacaps",
+      "value": "Rotacaps"
+    },
+    {
+      "id": "respules",
+      "value": "Respules"
+    },
+    {
+      "id": "sachet",
+      "value": "Sachet"
+    },
+    {
+      "id": "sanitizer",
+      "value": "Sanitizer"
+    },
+    {
+      "id": "scrub",
+      "value": "Scrub"
+    },
+    {
+      "id": "serum",
+      "value": "Serum"
+    },
+    {
+      "id": "shampoo",
+      "value": "Shampoo"
+    },
+    {
+      "id": "solution",
+      "value": "Solution"
+    },
+    {
+      "id": "solution_for_injection",
+      "value": "Solution For Injection"
+    },
+    {
+      "id": "sprey",
+      "value": "Sprey"
+    },
+    {
+      "id": "strips",
+      "value": "Strips"
+    },
+    {
+      "id": "suppositories",
+      "value": "Suppositories"
+    },
+    {
+      "id": "suspension",
+      "value": "Suspension"
+    },
+    {
+      "id": "tablet",
+      "value": "Tablet"
+    },
+    {
+      "id": "test_strips",
+      "value": "Test Strips"
+    },
+    {
+      "id": "toner",
+      "value": "Toner"
+    },
+    {
+      "id": "tube",
+      "value": "Tube"
+    },
+    {
+      "id": "vaginal_capsules",
+      "value": "Vaginal Capsule"
+    },
+    {
+      "id": "vaginal_cream",
+      "value": "Vaginal Cream"
+    },
+    {
+      "id": "vaginal_gel",
+      "value": "Vaginal Gel"
+    },
+    {
+      "id": "vaginal_suppositories",
+      "value": "Vaginal Suppositories"
+    },
+    {
+      "id": "vaginal_wash",
+      "value": "Vaginal Wash"
+    },
+    {
+      "id": "vial",
+      "value": "Vial"
+    }
+  ]
+}
