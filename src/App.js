@@ -84,6 +84,43 @@ function App() {
   const [searchText, setSeatchText] = useState("");
   const [sortByValue, setSortByValue] = useState("");
   const [sortByOrder, setSortByOrder] = useState("asc");
+  const [filter, setFilter] = useState("none");
+
+  const handleFilter = (value) => {
+    setFilter(value);
+    handleFilterAndSearch(value, searchText);
+  };
+
+  const onChangeSearch = (value) => {
+    setSeatchText(value);
+    handleFilterAndSearch(filter, value);
+  };
+
+  const handleFilterAndSearch = (filter, searchText) => {
+    const filteredData = data.filter((product) => {
+      if (searchText === "") return true;
+      return product.product.toLowerCase().includes(searchText.toLowerCase());
+    });
+
+    const fData = filteredData.filter(({ stock, limit, shop, store }) => {
+      const stockN = Number(stock.split("|")[0]);
+      const shopN = Number(shop.split("|")[0]);
+      const storeN = Number(store.split("|")[0]);
+      const limitN = Number(limit);
+      switch (filter) {
+        case "none":
+          return true;
+
+        case "order":
+          return stockN < limitN;
+
+        case "bring":
+          return storeN >= limitN && shopN < limitN;
+      }
+    });
+
+    setFilteredData(fData);
+  };
 
   const handleChangeSort = async (value) => {
     try {
@@ -137,14 +174,6 @@ function App() {
     }
   };
 
-  const onChangeSearch = (value) => {
-    setSeatchText(value);
-    const filteredData = data.filter((product) => {
-      if (value === "") return true;
-      return product.product.toLowerCase().includes(value.toLowerCase());
-    });
-    setFilteredData(filteredData);
-  };
   useEffect(() => {
     fetchData();
   }, []);
@@ -188,6 +217,12 @@ function App() {
       id: id,
       value: label,
     }));
+
+  const filterList = [
+    { id: "none", value: "None" },
+    { id: "order", value: "To Order" },
+    { id: "bring", value: "To Bring" },
+  ];
 
   return (
     <div className="App">
@@ -247,8 +282,8 @@ function App() {
             <SectionWrapper align="right">
               <SectionCustom>
                 <PaddedWrapper
-                  padding={"20px 0px 50px 0px"}
-                  paddingMob={"20px 0px 20px 0px"}
+                  padding={"20px 0px 0px 0px"}
+                  paddingMob={"20px 0px 0px 0px"}
                 >
                   <SectionWrapper>
                     <SectionCustom width={"356px"}>
@@ -277,6 +312,27 @@ function App() {
                         )}
                       </IconButton>
                     </PaddedWrapper>
+                  </SectionWrapper>
+                </PaddedWrapper>
+              </SectionCustom>
+            </SectionWrapper>
+            <SectionWrapper align="right">
+              <SectionCustom>
+                <PaddedWrapper
+                  padding={"20px 0px 50px 0px"}
+                  paddingMob={"20px 0px 0px 0px"}
+                >
+                  <SectionWrapper>
+                    <SectionCustom width={"400px"}>
+                      <InputWrapperSearch>
+                        <Select
+                          label={"Filter By"}
+                          value={filter}
+                          onChange={handleFilter}
+                          list={filterList}
+                        />
+                      </InputWrapperSearch>
+                    </SectionCustom>
                   </SectionWrapper>
                 </PaddedWrapper>
               </SectionCustom>

@@ -27,6 +27,7 @@ const AddProductForm = (props) => {
   const [unit, setUnit] = useState(unitList[0].id);
   const [subUnit, setSubUnit] = useState("");
   const [subUnitPerUnit, setSubUnitPerUnit] = useState(1);
+  const [limit, setLimit] = useState(1);
   const [manufacturer, setManufacturer] = useState("");
   const [supplier, setSupplier] = useState("");
   const [disabled, setDisable] = useState(false);
@@ -55,6 +56,10 @@ const AddProductForm = (props) => {
     setSubUnitPerUnit(value);
   };
 
+  const onChangeLimit = (value) => {
+    setLimit(value);
+  };
+
   const onChangeManufacturer = (value) => {
     setManufacturer(value);
   };
@@ -74,9 +79,11 @@ const AddProductForm = (props) => {
       subUnit: subUnit,
       subUnitPerUnit: subUnitPerUnit,
       rack: rack,
+      limit: limit,
       manufacturer: manufacturer,
       supplier: supplier,
     };
+
     (async () => {
       try {
         setDisable(true);
@@ -162,7 +169,12 @@ const AddProductForm = (props) => {
         </SectionOneByThree>
       </SectionWrapper>
       <SectionWrapper>
-        <SectionOneByTwo>
+        <SectionOneByThree>
+          <InputWrapper>
+            <Text label={"Limit"} value={limit} onChange={onChangeLimit} />
+          </InputWrapper>
+        </SectionOneByThree>
+        <SectionOneByThree>
           <InputWrapper>
             <Text
               label={"Manufacturer"}
@@ -170,8 +182,8 @@ const AddProductForm = (props) => {
               onChange={onChangeManufacturer}
             />
           </InputWrapper>
-        </SectionOneByTwo>
-        <SectionOneByTwo>
+        </SectionOneByThree>
+        <SectionOneByThree>
           <InputWrapper>
             <Text
               label={"Supplier"}
@@ -179,7 +191,7 @@ const AddProductForm = (props) => {
               onChange={onChangeSupplier}
             />
           </InputWrapper>
-        </SectionOneByTwo>
+        </SectionOneByThree>
       </SectionWrapper>
       <SectionWrapper align="right">
         <InputWrapper>
