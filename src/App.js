@@ -102,10 +102,9 @@ function App() {
       return product.product.toLowerCase().includes(searchText.toLowerCase());
     });
 
-    const fData = filteredData.filter(({ stock, limit, shop, store }) => {
+    const fData = filteredData.filter(({ stock, limit, shop }) => {
       const stockN = Number(stock.split("|")[0]);
       const shopN = Number(shop.split("|")[0]);
-      const storeN = Number(store.split("|")[0]);
       const limitN = Number(limit);
       switch (filter) {
         case "none":
@@ -115,7 +114,7 @@ function App() {
           return stockN < limitN;
 
         case "bring":
-          return storeN >= limitN && shopN < limitN;
+          return stockN >= limitN && shopN < limitN;
       }
     });
 

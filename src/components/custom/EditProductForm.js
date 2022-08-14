@@ -33,6 +33,7 @@ const EditProductForm = (props) => {
     subUnitPerUnit: subUnitPerUnitData,
     manufacturer: manufacturerData,
     supplier: supplierData,
+    limit: limitData,
     stock,
     store,
     shop,
@@ -43,6 +44,7 @@ const EditProductForm = (props) => {
   const [unit, setUnit] = useState(unitData || "");
   const [subUnit, setSubUnit] = useState(subUnitData || "");
   const [subUnitPerUnit, setSubUnitPerUnit] = useState(subUnitPerUnitData);
+  const [limit, setLimit] = useState(limitData);
   const [manufacturer, setManufacturer] = useState(manufacturerData || "");
   const [supplier, setSupplier] = useState(supplierData || "");
   const [disabled, setDisable] = useState(false);
@@ -69,6 +71,10 @@ const EditProductForm = (props) => {
 
   const onChangeSubUnitPerUnit = (value) => {
     setSubUnitPerUnit(value);
+  };
+
+  const onChangeLimit = (value) => {
+    setLimit(value);
   };
 
   const onChangeManufacturer = (value) => {
@@ -116,6 +122,7 @@ const EditProductForm = (props) => {
       store: `${newUnitQtyStore}|${newSubUnitQtyStore}`,
       stock: `${newUnitQtyStock}|${newSubUnitQtyStock}`,
       shop: `${newUnitQtyShop}|${newSubUnitQtyShop}`,
+      limit: limit,
     };
 
     (async () => {
@@ -207,7 +214,12 @@ const EditProductForm = (props) => {
         </SectionOneByThree>
       </SectionWrapper>
       <SectionWrapper>
-        <SectionOneByTwo>
+        <SectionOneByThree>
+          <InputWrapper>
+            <Text label={"Limit"} value={limit} onChange={onChangeLimit} />
+          </InputWrapper>
+        </SectionOneByThree>
+        <SectionOneByThree>
           <InputWrapper>
             <Text
               label={"Manufacturer"}
@@ -215,8 +227,8 @@ const EditProductForm = (props) => {
               onChange={onChangeManufacturer}
             />
           </InputWrapper>
-        </SectionOneByTwo>
-        <SectionOneByTwo>
+        </SectionOneByThree>
+        <SectionOneByThree>
           <InputWrapper>
             <Text
               label={"Supplier"}
@@ -224,7 +236,7 @@ const EditProductForm = (props) => {
               onChange={onChangeSupplier}
             />
           </InputWrapper>
-        </SectionOneByTwo>
+        </SectionOneByThree>
       </SectionWrapper>
       <SectionWrapper align="right">
         <InputWrapper>
