@@ -96,8 +96,8 @@ function App() {
     handleFilterAndSearch(filter, value);
   };
 
-  const handleFilterAndSearch = (filter, searchText) => {
-    const filteredData = data.filter((product) => {
+  const handleFilterAndSearch = (filter, searchText, dataP = data) => {
+    const filteredData = dataP.filter((product) => {
       if (searchText === "") return true;
       return product.product.toLowerCase().includes(searchText.toLowerCase());
     });
@@ -167,7 +167,8 @@ function App() {
       //   a.product.toLowerCase().localeCompare(b.product.toLowerCase())
       // );
       setData(sortedData);
-      setFilteredData(sortedData);
+      // setFilteredData(sortedData);
+      handleFilterAndSearch(filter, searchText, sortedData);
     } catch (e) {
       console.log(e);
     }
