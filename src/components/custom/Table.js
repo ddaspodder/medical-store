@@ -22,6 +22,7 @@ import StoreToShopForm from "./StoreToShopForm";
 import EditProductForm from "./EditProductForm";
 import DeleteProductForm from "./DeleteProductForm";
 import Modal from "../core/Modal";
+import dayjs from "dayjs";
 
 const actionColumns = [
   {
@@ -147,18 +148,28 @@ function Row({
           return "";
       }
     },
-    [row, unitList, subUnitList, typeList, handleAlert, fetchData]
+    [
+      row,
+      unitList,
+      subUnitList,
+      typeList,
+      handleAlert,
+      fetchData,
+    ]
   );
 
   const getFormattedQty = useCallback(
     (qty) => {
       if (!!qty) {
         const [unitQty, subUnitQty] = qty.split("|");
-        const filteredUnit = unitList.find((unit) => unit.id === row.unit);
+        const filteredUnit = unitList.find(
+          (unit) => unit.id === row.unit
+        );
         const filteredSubUnit = subUnitList.find(
           (subUnit) => subUnit.id === row.subUnit
         );
-        const filteredUnitLabel = (filteredUnit && filteredUnit.value) || "";
+        const filteredUnitLabel =
+          (filteredUnit && filteredUnit.value) || "";
         const filteredSubUnitLabel =
           (filteredSubUnit && filteredSubUnit.value) || "";
         const qtyLabel = `${unitQty}\u00A0${filteredUnitLabel} ${
@@ -180,7 +191,11 @@ function Row({
             size="small"
             onClick={() => setOpen(!open)}
           >
-            {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+            {open ? (
+              <KeyboardArrowUpIcon />
+            ) : (
+              <KeyboardArrowDownIcon />
+            )}
           </IconButton>
         </TableCell>
         {/* for SL no */}
@@ -204,6 +219,13 @@ function Row({
                 (item) => item.id === row["type"]
               );
               return filteredType ? filteredType.value : "";
+            } else if (
+              column.id === "expiry" &&
+              !!row[column.id]
+            ) {
+              return dayjs(row[column.id]).format(
+                "DD-MM-YYYY"
+              );
             }
             return row[column.id];
           })();
@@ -218,7 +240,10 @@ function Row({
           );
         })}
       </TableRow>
-      <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={10}>
+      <TableCell
+        style={{ paddingBottom: 0, paddingTop: 0 }}
+        colSpan={10}
+      >
         <Collapse in={open} timeout="auto" unmountOnExit>
           <Box>
             <Table>
@@ -227,10 +252,18 @@ function Row({
                   <TableCell
                     key={column.id}
                     align={column.align}
-                    style={{ minWidth: column.minWidth, borderBottom: "none" }}
+                    style={{
+                      minWidth: column.minWidth,
+                      borderBottom: "none",
+                    }}
                   >
-                    <Modal label={column.label} buttonVariant={"contained"}>
-                      {(modalProps) => getForm(column, modalProps)}
+                    <Modal
+                      label={column.label}
+                      buttonVariant={"contained"}
+                    >
+                      {(modalProps) =>
+                        getForm(column, modalProps)
+                      }
                     </Modal>
                   </TableCell>
                 ))}
@@ -288,7 +321,10 @@ export default function StickyHeadTable(props) {
                 <TableCell
                   key={column.id}
                   align={column.align}
-                  style={{ minWidth: column.minWidth, fontWeight: "bold" }}
+                  style={{
+                    minWidth: column.minWidth,
+                    fontWeight: "bold",
+                  }}
                 >
                   {column.label}
                 </TableCell>
@@ -297,7 +333,10 @@ export default function StickyHeadTable(props) {
           </TableHead>
           <TableBody>
             {rows
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+              .slice(
+                page * rowsPerPage,
+                page * rowsPerPage + rowsPerPage
+              )
               .map((row, index) => {
                 return (
                   <Row

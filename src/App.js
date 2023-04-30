@@ -70,6 +70,12 @@ export const columns = [
     minWidth: 120,
     align: "left",
   },
+  {
+    id: "expiry",
+    label: "Expiry Date",
+    minWidth: 120,
+    align: "left",
+  },
 ];
 
 function App() {

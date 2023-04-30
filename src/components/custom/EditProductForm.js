@@ -12,6 +12,8 @@ import {
 } from "../core/StyledComponents";
 import { updateProduct } from "../../apiEndpoint";
 import { getUpdatedQtyOnSubUnitPerUnitChange } from "../../helper";
+import DateField from "../core/DateField";
+import dayjs from "dayjs";
 
 const EditProductForm = (props) => {
   const {
@@ -34,6 +36,7 @@ const EditProductForm = (props) => {
     manufacturer: manufacturerData,
     supplier: supplierData,
     limit: limitData,
+    expiry: expiryDate,
     stock,
     store,
     shop,
@@ -43,10 +46,17 @@ const EditProductForm = (props) => {
   const [rack, setRack] = useState(rackData || "");
   const [unit, setUnit] = useState(unitData || "");
   const [subUnit, setSubUnit] = useState(subUnitData || "");
-  const [subUnitPerUnit, setSubUnitPerUnit] = useState(subUnitPerUnitData);
+  const [subUnitPerUnit, setSubUnitPerUnit] = useState(
+    subUnitPerUnitData
+  );
   const [limit, setLimit] = useState(limitData);
-  const [manufacturer, setManufacturer] = useState(manufacturerData || "");
-  const [supplier, setSupplier] = useState(supplierData || "");
+  const [expiry, setExpiry] = useState(expiryDate);
+  const [manufacturer, setManufacturer] = useState(
+    manufacturerData || ""
+  );
+  const [supplier, setSupplier] = useState(
+    supplierData || ""
+  );
   const [disabled, setDisable] = useState(false);
 
   const onChangePName = (value) => {
@@ -79,6 +89,10 @@ const EditProductForm = (props) => {
 
   const onChangeManufacturer = (value) => {
     setManufacturer(value);
+  };
+
+  const onChangeExpiry = (value) => {
+    setExpiry(value);
   };
 
   const onChangeSupplier = (value) => {
@@ -119,6 +133,7 @@ const EditProductForm = (props) => {
       rack: rack,
       manufacturer: manufacturer,
       supplier: supplier,
+      expiry: expiry,
       store: `${newUnitQtyStore}|${newSubUnitQtyStore}`,
       stock: `${newUnitQtyStock}|${newSubUnitQtyStock}`,
       shop: `${newUnitQtyShop}|${newSubUnitQtyShop}`,
@@ -130,7 +145,11 @@ const EditProductForm = (props) => {
         setDisable(true);
         let res = await updateProduct(payload, id);
         console.log("res", res);
-        handleAlert("The product was updated successfully!", "success", true);
+        handleAlert(
+          "The product was updated successfully!",
+          "success",
+          true
+        );
         fetchData();
         handleClose();
         setDisable(false);
@@ -173,7 +192,11 @@ const EditProductForm = (props) => {
         </SectionOneByThree>
         <SectionOneByThree>
           <InputWrapper>
-            <Text label={"Rack Number"} value={rack} onChange={onChangeRack} />
+            <Text
+              label={"Rack Number"}
+              value={rack}
+              onChange={onChangeRack}
+            />
           </InputWrapper>
         </SectionOneByThree>
       </SectionWrapper>
@@ -207,7 +230,8 @@ const EditProductForm = (props) => {
               onChange={onChangeSubUnitPerUnit}
               disabled={subUnit ? false : true}
               onBlur={() =>
-                (!subUnitPerUnit || subUnitPerUnit < 1) && setSubUnitPerUnit(1)
+                (!subUnitPerUnit || subUnitPerUnit < 1) &&
+                setSubUnitPerUnit(1)
               }
             />
           </InputWrapper>
@@ -216,7 +240,11 @@ const EditProductForm = (props) => {
       <SectionWrapper>
         <SectionOneByThree>
           <InputWrapper>
-            <Text label={"Limit"} value={limit} onChange={onChangeLimit} />
+            <Text
+              label={"Limit"}
+              value={limit}
+              onChange={onChangeLimit}
+            />
           </InputWrapper>
         </SectionOneByThree>
         <SectionOneByThree>
@@ -234,6 +262,17 @@ const EditProductForm = (props) => {
               label={"Supplier"}
               value={supplier}
               onChange={onChangeSupplier}
+            />
+          </InputWrapper>
+        </SectionOneByThree>
+      </SectionWrapper>
+      <SectionWrapper>
+        <SectionOneByThree>
+          <InputWrapper>
+            <DateField
+              label={"Expiry Date"}
+              value={expiry ? dayjs(expiry) : null}
+              onChange={onChangeExpiry}
             />
           </InputWrapper>
         </SectionOneByThree>
