@@ -11,6 +11,8 @@ import {
   PaddedWrapper,
 } from "../core/StyledComponents";
 import { addProduct } from "../../apiEndpoint";
+import DateField from "../core/DateField";
+import dayjs from "dayjs";
 
 const AddProductForm = (props) => {
   const {
@@ -31,6 +33,7 @@ const AddProductForm = (props) => {
   const [manufacturer, setManufacturer] = useState("");
   const [supplier, setSupplier] = useState("");
   const [disabled, setDisable] = useState(false);
+  const [expiry, setExpiry] = useState(null);
 
   const onChangePName = (value) => {
     setPName(value);
@@ -68,6 +71,10 @@ const AddProductForm = (props) => {
     setSupplier(value);
   };
 
+  const onChangeExpiry = (value) => {
+    setExpiry(value);
+  };
+
   const onSubmitForm = () => {
     const payload = {
       type: type,
@@ -82,6 +89,7 @@ const AddProductForm = (props) => {
       limit: limit,
       manufacturer: manufacturer,
       supplier: supplier,
+      expiry: dayjs(expiry),
     };
 
     (async () => {
@@ -89,13 +97,21 @@ const AddProductForm = (props) => {
         setDisable(true);
         let res = await addProduct(payload);
         console.log("res", res);
-        handleAlert("Product added successfully!", "success", true);
+        handleAlert(
+          "Product added successfully!",
+          "success",
+          true
+        );
         fetchData();
         handleClose();
         setDisable(false);
       } catch (e) {
         console.log(e);
-        handleAlert("There was some problem in adding product!", "error", true);
+        handleAlert(
+          "There was some problem in adding product!",
+          "error",
+          true
+        );
         setDisable(false);
       }
     })();
@@ -128,7 +144,11 @@ const AddProductForm = (props) => {
         </SectionOneByThree>
         <SectionOneByThree>
           <InputWrapper>
-            <Text label={"Rack Number"} value={rack} onChange={onChangeRack} />
+            <Text
+              label={"Rack Number"}
+              value={rack}
+              onChange={onChangeRack}
+            />
           </InputWrapper>
         </SectionOneByThree>
       </SectionWrapper>
@@ -162,7 +182,8 @@ const AddProductForm = (props) => {
               onChange={onChangeSubUnitPerUnit}
               disabled={subUnit ? false : true}
               onBlur={() =>
-                (!subUnitPerUnit || subUnitPerUnit < 1) && setSubUnitPerUnit(1)
+                (!subUnitPerUnit || subUnitPerUnit < 1) &&
+                setSubUnitPerUnit(1)
               }
             />
           </InputWrapper>
@@ -171,7 +192,11 @@ const AddProductForm = (props) => {
       <SectionWrapper>
         <SectionOneByThree>
           <InputWrapper>
-            <Text label={"Limit"} value={limit} onChange={onChangeLimit} />
+            <Text
+              label={"Limit"}
+              value={limit}
+              onChange={onChangeLimit}
+            />
           </InputWrapper>
         </SectionOneByThree>
         <SectionOneByThree>
@@ -189,6 +214,17 @@ const AddProductForm = (props) => {
               label={"Supplier"}
               value={supplier}
               onChange={onChangeSupplier}
+            />
+          </InputWrapper>
+        </SectionOneByThree>
+      </SectionWrapper>
+      <SectionWrapper>
+        <SectionOneByThree>
+          <InputWrapper>
+            <DateField
+              label={"Expiry Date"}
+              value={null}
+              onChange={onChangeExpiry}
             />
           </InputWrapper>
         </SectionOneByThree>
